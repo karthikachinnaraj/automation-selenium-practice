@@ -1,0 +1,10 @@
+
+public class Mainclass {
+
+	public static void main(String[] args) {
+		employee e1=new employee();
+		Person P1=new Person();
+		Person P2=
+	}
+
+}

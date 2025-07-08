@@ -1,0 +1,16 @@
+package Collections;
+
+import java.util.List;
+import java.util.ArrayList;
+public class Mixedcollection {
+
+	public static void main(String[] args) {
+		List<String> fruitname=new ArrayList<String>();
+		fruitname.add("Apple");
+		fruitname.add("Orange");
+		fruitname.add("Pinapple");
+		fruitname.add("Apple");
+		fruitname.add("Gauva");
+	}
+
+}

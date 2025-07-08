@@ -1,0 +1,27 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sample {
+    public static void main(String[] args) {
+
+        // Set path to chromedriver
+        System.setProperty("webdriver.chrome.driver", "D:\Programming\selenium\chromedriver-win64");
+
+        // Launch Chrome
+        WebDriver driver = new ChromeDriver();
+
+        // Open Google
+        driver.get("https://www.google.com");
+
+        // Search "Selenium"
+        driver.findElement(By.name("q")).sendKeys("Selenium");
+        driver.findElement(By.name("q")).submit();
+
+        // Wait for 3 seconds
+        try { Thread.sleep(3000); } catch (Exception e) {}
+
+        // Close browser
+        driver.quit();
+    }
+}

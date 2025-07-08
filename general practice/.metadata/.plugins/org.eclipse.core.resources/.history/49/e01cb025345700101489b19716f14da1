@@ -1,0 +1,19 @@
+package Collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> setname=new HashSet<String>();
+		setname.add("Katthika");
+		setname.add("Rahul");
+		setname.add("Katthika");
+		setname.add("Rahul");
+		setname.add("SK");
+		
+	}
+
+}

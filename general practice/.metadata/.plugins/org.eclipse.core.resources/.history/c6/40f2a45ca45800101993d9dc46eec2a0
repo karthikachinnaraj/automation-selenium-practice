@@ -1,0 +1,23 @@
+package orangeHRM;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class loginPage {
+
+	public static void main(String[] args) {
+		System.setProperty("Webdriver.chrome.driver", "D:\\Programming\\selenium\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//form/div/div/child::div/following::input")).sendKeys("Admin");
+		driver.findElement(By.cssSelector("input.oxd-input oxd-input--active")).sendKeys("admin123");
+		
+		driver.findElement(By.xpath("//form/child::div[3]")).click();
+		
+		driver.close();
+	}
+
+}

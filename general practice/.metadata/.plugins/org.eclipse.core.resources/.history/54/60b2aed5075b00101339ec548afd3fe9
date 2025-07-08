@@ -1,0 +1,48 @@
+/*Write a Java program that:
+
+Reads 5 integers from the user
+
+Prints only even numbers
+
+Skips numbers divisible by 5
+
+Stops if number is negative*/
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Practiceprogram {
+	public static void main(String[] args) {
+		/*
+		 * Scanner scanner=new Scanner(System.in);
+		 * System.out.println("Enter 5 integers"); for(int i=0;i<5;i++) { int num
+		 * =scanner.nextInt();
+		 * 
+		 * if(num%2==0){ System.out.println("Entered number is even number"+num); }
+		 * if(num%5==0){ continue; } if(num<0) {
+		 * System.out.println("Negative number entered. Stopping..."+num); break; } }
+		 * 
+		 * scanner.close();
+		 */
+		/*
+		 * int[] arr = { 23, 34, 5, 67, 99, 100, 99 }; int max = Integer.MIN_VALUE; int
+		 * second_max=Integer.MIN_VALUE; for(int num:arr) { if(num>max) { max=num; }
+		 * else { continue; } } System.out.println(max);
+		 */
+		
+		String name="karthika";
+		char[] chname=name.toCharArray();
+		Set arr=new HashSet();
+		for(char ch:chname) {
+			arr.add(ch);
+			System.out.println(arr);
+			 
+		}
+		  }
+		 
+
+	}
+

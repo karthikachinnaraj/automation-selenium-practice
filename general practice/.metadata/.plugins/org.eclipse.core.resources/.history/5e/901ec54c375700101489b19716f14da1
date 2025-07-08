@@ -1,0 +1,13 @@
+package Collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class mapPractice {
+	public static void main(String[] args) {
+		Map<Integer,String> dict=new HashMap<Integer,String>();
+		
+		
+		
+	}
+}

@@ -1,0 +1,25 @@
+	package demo.kc.selenium_demo_sauce;
+	
+	import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+	
+	public class Pracgice {
+	
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			String name="karthika";
+			char[] chname=name.toCharArray();
+			Set<Character> arr=new LinkedHashSet<Character>();
+			for(char ch:chname) {
+				arr.add(ch);
+				
+		}
+			for(char n:arr) {
+				System.out.print(n);
+			}
+		
+		
+	}
+	}

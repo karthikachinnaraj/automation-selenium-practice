@@ -1,0 +1,38 @@
+package Collections;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+public class SetPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> setname=new HashSet<String>();
+		setname.add("Katthika");
+		setname.add("Rahul");
+		setname.add("Katthika");
+		setname.add("Rahul");
+		setname.add("SK");
+		
+		System.out.println(setname);
+		List<String> searchname=Arrays.asList("Karthika","Rahul","SK");
+	
+		for(String name:searchname) {
+			System.out.println(name);
+			if(setname.contains(name)) {
+				System.out.println("name exsists in set");
+			}
+			else {
+				System.out.println("name not exsists in set");
+			}
+		}
+			
+			
+		
+
+	}
+	
+}

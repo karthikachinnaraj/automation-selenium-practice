@@ -1,0 +1,13 @@
+package Collections;
+
+import java.util.Collection;
+
+import java.
+public class collection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> number= new arraylist<Integer>()
+	}
+
+}

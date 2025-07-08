@@ -1,0 +1,20 @@
+	package demo.kc.selenium_demo_sauce;
+	
+	import java.util.HashSet;
+	import java.util.Set;
+	
+	public class Pracgice {
+	
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			String name="karthika";
+			char[] chname=name.toCharArray();
+			Set<Character> arr=new HashSet<Character>();
+			for(char ch:chname) {
+				arr.add(ch);
+				String nondup=arr.toString(); 
+		}
+		
+			System.out.println(nondup);
+	}
+	}

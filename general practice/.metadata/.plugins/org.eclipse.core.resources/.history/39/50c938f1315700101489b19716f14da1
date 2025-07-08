@@ -1,0 +1,32 @@
+package Collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class collection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> number= new ArrayList<Integer>();
+		number.add(1);
+		number.add(1121);
+		number.add(1);
+		number.add(13);
+		number.add(12);
+		number.add(41);
+		number.add(15);
+		number.add(15);
+		number.add(1);
+		number.add(13);
+		number.add(41);
+		for(Integer num:number){
+			if(num>50) {
+				number.remove(num);
+	}
+		
+		}
+		System.out.println("Final list"+number);
+	}
+}
+
+

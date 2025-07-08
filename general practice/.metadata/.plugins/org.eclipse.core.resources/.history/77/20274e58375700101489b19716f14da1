@@ -1,0 +1,18 @@
+package Collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class mapPractice {
+	public static void main(String[] args) {
+		Map<Integer,String> dict=new HashMap<Integer,String>();
+		dict.put(1,"Karthika");
+		dict.put(2,"Rahul");
+		dict.put(3,"Karthika");
+		dict.put(4,"SK");
+		dict.put(5,"JS");
+		
+		
+		
+	}
+}
