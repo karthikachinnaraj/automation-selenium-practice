@@ -6,22 +6,20 @@
 		<classes>
 			<class name="demo.kc.selenium_demo_sauce.LoginFunctionality">
 			<methods>
-				<include name="ValidLogin()"></include>
-				<include name="InvalidLogin()"></include>
-				<include name="LogOut()"></include>
-				<include name="ValidLogin()"></include>
+				<include name="ValidLogin"></include>
+				<include name="InvalidLogin"></include>
+				<include name="LogOut"></include>
 			</methods>
 			</class>	
 		</classes>
 	</test>
 
-<suite name="Cart">
 	<test name="CartFunctionality">
 		<classes>
 			<class name="demo.kc.selenium_demo_sauce.CartFunctionality">
 			<methods>
 				<include name="AddAllProducts"></include>
-				
+				<include name="RemovePdt"></include>
 			</methods>
 			</class>	
 		</classes>

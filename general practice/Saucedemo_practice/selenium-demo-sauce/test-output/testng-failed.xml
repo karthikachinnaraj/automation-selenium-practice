@@ -6,7 +6,7 @@
       <class name="demo.kc.selenium_demo_sauce.CartFunctionality">
         <methods>
           <include name="setup"/>
-          <include name="AddAllProducts"/>
+          <include name="RemovePdt"/>
           <include name="OpenUrl"/>
         </methods>
       </class> <!-- demo.kc.selenium_demo_sauce.CartFunctionality -->

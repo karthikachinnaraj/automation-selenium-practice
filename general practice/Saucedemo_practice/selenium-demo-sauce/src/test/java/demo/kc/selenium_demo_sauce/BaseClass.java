@@ -2,6 +2,7 @@ package demo.kc.selenium_demo_sauce;
 
 import java.io.File;
 import java.io.IOException;
+
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -16,10 +17,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+
 import org.apache.commons.io.FileUtils;
 
 public class BaseClass {
@@ -27,23 +28,22 @@ public class BaseClass {
 	WebDriver driver;
 	@BeforeMethod
 	public void OpenUrl() {
-		ChromeOptions options = new ChromeOptions();
+		final Map<String, Object> chromePrefs = new HashMap<>();
+		chromePrefs.put("credentials_enable_service", false);
+		chromePrefs.put("profile.password_manager_enabled", false);
+		chromePrefs.put("profile.password_manager_leak_detection", false); // <======== This is the important one
 
-        // Disable the password manager and save-password prompts
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-
-        options.setExperimentalOption("prefs", prefs);
+		final ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setExperimentalOption("prefs", chromePrefs);
 
 		 System.setProperty("webdriver.chrome.driver","D:\\Programming\\selenium\\chromedriver-win64\\chromedriver.exe");
-		 driver=new ChromeDriver();
+		 driver=new ChromeDriver(chromeOptions);
 		 driver.get("https://www.saucedemo.com/");
 	
 	
 	}
 	
-	//@AfterTest
+	@AfterMethod
 	public void closeUrl() {
 		if(driver!=null) {
 			driver.quit();

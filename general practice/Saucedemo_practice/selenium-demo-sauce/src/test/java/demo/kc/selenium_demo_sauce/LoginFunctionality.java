@@ -1,10 +1,10 @@
 package demo.kc.selenium_demo_sauce;
 
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 
 import org.testng.Assert;
@@ -12,16 +12,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginFunctionality extends BaseClass {
-	public LoginFunctionality(WebDriver driver) {
-		this.driver=driver;
-	}
+	
 
-	@Test
 //	Automate login using valid vcredentials → verify Products page title → print the title.
+	@Test
 	public void ValidLogin() {
 	
-		//ImplicitlyWait();
-		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		ImplicitlyWait();
+		driver.findElement(By.id("user-name")).sendKeys("visual_user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		driver.findElement(By.id("login-button")).click();
 		String Title=driver.findElement(By.xpath("//div[@id='header_container']/div[2]/span")).getText();
@@ -35,7 +33,7 @@ public class LoginFunctionality extends BaseClass {
 	@Test
 	public void InvalidLogin()  {
 		ImplicitlyWait();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		driver.findElement(By.id("user-name")).sendKeys("user");
 		driver.findElement(By.id("password")).sendKeys("secrete");
 		driver.findElement(By.id("login-button")).click();
@@ -60,6 +58,7 @@ public class LoginFunctionality extends BaseClass {
 		Screenshot("Logout");
 		driver.findElement(By.id("logout_sidebar_link")).click();
 		Screenshot("Logout");
+		ImplicitlyWait();
 		String Actual=driver.findElement(By.id("login-button")).getAttribute("value");
 		Assert.assertEquals(Actual, "Login", "Logout successful");
 
