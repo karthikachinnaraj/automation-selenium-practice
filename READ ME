@@ -1,0 +1,47 @@
+
+---
+
+## 🚀 Technologies Used
+
+- **Language**: Java 21
+- **Framework**: TestNG
+- **Automation**: Selenium WebDriver
+- **Build Tool**: Maven (with `pom.xml`)
+- **IDE**: Eclipse (workspace managed manually)
+- **Version Control**: Git + GitHub
+
+---
+
+## ✅ Key Features
+
+- Dynamic locators (XPath axes, CSS selectors)
+- Scrolls, waits, screenshots, window handling
+- Multi-level inheritance and modular reusable functions
+- Project-ready Java examples with test assertions
+
+---
+
+## 🛠 How to Run
+
+1. Clone the repository  
+2. Open in Eclipse/IntelliJ  
+3. Install dependencies using Maven  
+4. Right-click `testng.xml` → Run As → TestNG Suite
+
+---
+
+## 📸 Screenshots
+
+Located in `Saucedemo_snapshot/` and `test-output/` for TestNG reports and visual validations.
+
+---
+
+## 📬 Contact
+
+**Karthika Chinnaraj**  
+Aspiring QA Automation Engineer | Passionate about clean code & automation  
+📧 [Your email] | 🌐 [LinkedIn or Portfolio link]
+
+---
+
+> _This is a self-practice project built to improve hands-on automation and Java development skills._
