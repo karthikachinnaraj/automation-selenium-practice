@@ -1,0 +1,30 @@
+package Collections;
+
+import java.util.List;
+import java.util.Set;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+public class Mixedcollection {
+
+	public static void main(String[] args) {
+		List<String> fruitname=new ArrayList<String>();
+		fruitname.add("Apple");
+		fruitname.add("Orange");
+		fruitname.add("Pinapple");
+		fruitname.add("Apple");
+		fruitname.add("Gauva");
+			
+		Set<String> fn=new HashSet<>(fruitname);
+		List<String> nl=new ArrayList<>(fn);
+		/*for(String name:fn) {
+		fruitname=Arrays.asList(name);*/
+		Collections.sort(nl);
+		System.out.println("Sorted list" + nl);
+		}
+		
+	
+
+}
