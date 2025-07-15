@@ -19,14 +19,14 @@ public class CartFunctionality extends LoginFunctionality {
     	
 		
 		
-		ValidLogin();
+		//ValidLogin();
 		List<WebElement> products=driver.findElements(By.xpath("//div[@class=\"inventory_item_description\"]/div[2]/button"));
 		
 		for(WebElement link : products) {
 			link.click();
 		}
 		
-		ImplicitlyWait();
+		//ImplicitlyWait();
 		String Count=driver.findElement(By.xpath("//div[@id=\"shopping_cart_container\"]/a/span")).getText();
 		System.out.println(Count);
 		List<WebElement> pdtname=driver.findElements(By.xpath("//div[@class=\"inventory_list\"]/div/div[2]/div/a/div"));
@@ -45,7 +45,7 @@ public class CartFunctionality extends LoginFunctionality {
     	for(int i=0;i<2;i++) {
     		Removepdt.get(i).click();
     	}
-    	ImplicitlyWait();
+    	//ImplicitlyWait();
     	String cartcount=driver.findElement(By.xpath("//div[@id=\"shopping_cart_container\"]/a/span")).getText();
     	if(cartcount.equals("4")) {
     		System.out.println("4 items are remaining in the cart");

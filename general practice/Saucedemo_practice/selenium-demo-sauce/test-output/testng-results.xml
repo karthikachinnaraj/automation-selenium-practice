@@ -2,24 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T18:23:44 IST" name="Default suite" finished-at="2025-07-09T18:23:48 IST" duration-ms="3926">
+  <suite started-at="2025-07-15T17:42:09 IST" name="Default suite" finished-at="2025-07-15T17:42:13 IST" duration-ms="3861">
     <groups>
     </groups>
-    <test started-at="2025-07-09T18:23:44 IST" name="Default test" finished-at="2025-07-09T18:23:48 IST" duration-ms="3926">
-      <class name="demo.kc.selenium_demo_sauce.Checkout">
-        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:demo.kc.selenium_demo_sauce.Checkout@4efbca5a]" started-at="2025-07-09T18:23:45 IST" name="OpenUrl" finished-at="2025-07-09T18:23:47 IST" duration-ms="2657" status="PASS">
+    <test started-at="2025-07-15T17:42:09 IST" name="Default test" finished-at="2025-07-15T17:42:13 IST" duration-ms="3861">
+      <class name="demo.kc.selenium_demo_sauce.LoginFunctionality">
+        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:demo.kc.selenium_demo_sauce.LoginFunctionality@55183b20]" started-at="2025-07-15T17:42:10 IST" name="OpenUrl" finished-at="2025-07-15T17:42:12 IST" duration-ms="2465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenUrl -->
-        <test-method signature="checkout()[pri:0, instance:demo.kc.selenium_demo_sauce.Checkout@4efbca5a]" started-at="2025-07-09T18:23:47 IST" name="checkout" finished-at="2025-07-09T18:23:48 IST" duration-ms="1042" status="PASS">
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:0, instance:demo.kc.selenium_demo_sauce.LoginFunctionality@55183b20]" started-at="2025-07-15T17:42:12 IST" name="ValidLogin" data-provider="Exceldata" finished-at="2025-07-15T17:42:13 IST" duration-ms="512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkout -->
-        <test-method is-config="true" signature="closeUrl()[pri:0, instance:demo.kc.selenium_demo_sauce.Checkout@4efbca5a]" started-at="2025-07-09T18:23:48 IST" name="closeUrl" finished-at="2025-07-09T18:23:48 IST" duration-ms="196" status="PASS">
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="closeUrl()[pri:0, instance:demo.kc.selenium_demo_sauce.LoginFunctionality@55183b20]" started-at="2025-07-15T17:42:13 IST" name="closeUrl" finished-at="2025-07-15T17:42:13 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeUrl -->
-      </class> <!-- demo.kc.selenium_demo_sauce.Checkout -->
+      </class> <!-- demo.kc.selenium_demo_sauce.LoginFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

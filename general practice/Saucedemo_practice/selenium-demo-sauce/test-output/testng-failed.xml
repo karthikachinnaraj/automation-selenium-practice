@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.kc.selenium_demo_sauce.CartFunctionality">
+      <class name="demo.kc.selenium_demo_sauce.LoginFunctionality">
         <methods>
-          <include name="setup"/>
-          <include name="RemovePdt"/>
           <include name="OpenUrl"/>
+          <include name="ValidLogin"/>
+          <include name="closeUrl"/>
         </methods>
-      </class> <!-- demo.kc.selenium_demo_sauce.CartFunctionality -->
+      </class> <!-- demo.kc.selenium_demo_sauce.LoginFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

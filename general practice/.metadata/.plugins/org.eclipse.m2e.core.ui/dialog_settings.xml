@@ -26,20 +26,24 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Practice.kc"/>
 			<item value="demo.kc.selenium_demo_sauce"/>
 		</list>
 		<list key="groupId">
+			<item value="Practice"/>
 			<item value="demo.kc"/>
 		</list>
 		<list key="artifactId">
+			<item value="kc"/>
+			<item value="kc-demo"/>
 			<item value="selenium-demo-sauce"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
 		<list key="version">

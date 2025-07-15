@@ -1,9 +1,0 @@
-
-public class employee extends Person {
-	@Override
-	public void showinfo() {
-		System.out.println("I am a employee");
-	}
-	
-
-}
