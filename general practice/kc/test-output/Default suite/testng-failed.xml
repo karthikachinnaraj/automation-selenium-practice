@@ -5,8 +5,8 @@
     <classes>
       <class name="demo.qa.UIElementTests">
         <methods>
-          <include name="ElementPractice"/>
           <include name="BrowserSetup"/>
+          <include name="CheckboxPractice"/>
         </methods>
       </class> <!-- demo.qa.UIElementTests -->
     </classes>
