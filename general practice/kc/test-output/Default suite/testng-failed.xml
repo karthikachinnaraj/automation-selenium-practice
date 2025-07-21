@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.qa.UIElementTests">
+      <class name="demo.qa.AlertFrameWindow">
         <methods>
           <include name="BrowserSetup"/>
-          <include name="CheckboxPractice"/>
+          <include name="Alert"/>
         </methods>
-      </class> <!-- demo.qa.UIElementTests -->
+      </class> <!-- demo.qa.AlertFrameWindow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

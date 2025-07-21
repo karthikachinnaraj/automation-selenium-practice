@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T16:44:45 IST" name="Default suite" finished-at="2025-07-16T16:44:52 IST" duration-ms="6711">
+  <suite started-at="2025-07-21T18:37:36 IST" name="Default suite" finished-at="2025-07-21T18:37:52 IST" duration-ms="15948">
     <groups>
     </groups>
-    <test started-at="2025-07-16T16:44:45 IST" name="Default test" finished-at="2025-07-16T16:44:52 IST" duration-ms="6711">
-      <class name="demo.qa.UIElementTests">
-        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:demo.qa.UIElementTests@4c583ecf]" started-at="2025-07-16T16:44:45 IST" name="BrowserSetup" finished-at="2025-07-16T16:44:51 IST" duration-ms="6180" status="PASS">
+    <test started-at="2025-07-21T18:37:36 IST" name="Default test" finished-at="2025-07-21T18:37:52 IST" duration-ms="15948">
+      <class name="demo.qa.AlertFrameWindow">
+        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:demo.qa.AlertFrameWindow@3270d194]" started-at="2025-07-21T18:37:36 IST" name="BrowserSetup" finished-at="2025-07-21T18:37:51 IST" duration-ms="14555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserSetup -->
-        <test-method signature="CheckboxPractice()[pri:0, instance:demo.qa.UIElementTests@4c583ecf]" started-at="2025-07-16T16:44:51 IST" name="CheckboxPractice" finished-at="2025-07-16T16:44:52 IST" duration-ms="460" status="PASS">
+        <test-method signature="NestedFrames()[pri:0, instance:demo.qa.AlertFrameWindow@3270d194]" started-at="2025-07-21T18:37:51 IST" name="NestedFrames" finished-at="2025-07-21T18:37:52 IST" duration-ms="1338" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckboxPractice -->
-      </class> <!-- demo.qa.UIElementTests -->
+        </test-method> <!-- NestedFrames -->
+      </class> <!-- demo.qa.AlertFrameWindow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
